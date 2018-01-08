@@ -106,10 +106,10 @@ nav {
 	    height: 38px;
     }
     &.citizen .details::after{
-	    background: url(/assets/citizen.svg);
+	    background: url(../assets/citizen.svg);
     }
      &.professional .details::after{
-	    background: url(/assets/professional.svg);
+	    background: url(../assets/professional.svg);
     }
 
 }

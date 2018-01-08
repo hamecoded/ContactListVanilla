@@ -51,8 +51,8 @@ nav a {
 /* line 42, ../sass/app.scss */
 .contact-list {
   width: 600px;
-  height: 624px;
-  margin: 4px auto;
+  height: 600px;
+  margin: 14px auto;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -60,7 +60,7 @@ nav a {
 /* line 50, ../sass/app.scss */
 .contact {
   width: calc(25% - 8px);
-  height: 200px;
+  height: 193px;
   background-color: white;
   display: inline-block;
   float: left;
@@ -70,7 +70,7 @@ nav a {
 }
 /* line 61, ../sass/app.scss */
 .contact:hover img {
-  height: 112px;
+  height: 107px;
 }
 /* line 65, ../sass/app.scss */
 .contact:hover .details .more {
@@ -79,7 +79,7 @@ nav a {
 /* line 71, ../sass/app.scss */
 .contact img {
   width: calc(100% - 12px);
-  height: 136px;
+  height: 131px;
   padding: 6px;
   object-fit: cover;
   object-position: top;
@@ -120,9 +120,9 @@ nav a {
 }
 /* line 108, ../sass/app.scss */
 .contact.citizen .details::after {
-  background: url(/assets/citizen.svg);
+  background: url(../assets/citizen.svg);
 }
 /* line 111, ../sass/app.scss */
 .contact.professional .details::after {
-  background: url(/assets/professional.svg);
+  background: url(../assets/professional.svg);
 }
