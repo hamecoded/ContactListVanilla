@@ -2,7 +2,7 @@
 
 import util from './myUtils.js';
 
-const apiUri = "http://private-05627-frontendnewhire.apiary-mock.com/contact_list";
+const apiUri = "https://private-05627-frontendnewhire.apiary-mock.com/contact_list";
 
 export class Contact {
 	constructor(obj){
