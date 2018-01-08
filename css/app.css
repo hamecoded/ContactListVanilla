@@ -1,5 +1,128 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+/* line 1, ../sass/app.scss */
+a, input, div, span, button {
+  font-family: SANS-SERIF;
+}
+
+/* line 4, ../sass/app.scss */
+body {
+  background-color: #f2f2f2;
+}
+
+/* line 7, ../sass/app.scss */
+nav {
+  background-color: #00b9e5;
+  height: 44px;
+  line-height: 44px;
+  padding: 0px 40px;
+  overflow: hidden;
+  min-width: 600px;
+  -webkit-box-shadow: 0px 2px 5px -1px #00b9e5;
+  -moz-box-shadow: 0px 2px 5px -1px #00b9e5;
+  box-shadow: 0px 2px 5px -1px #00b9e5;
+}
+/* line 17, ../sass/app.scss */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+/* line 24, ../sass/app.scss */
+.search-btn {
+  position: relative;
+  float: right;
+}
+/* line 27, ../sass/app.scss */
+.search-btn input {
+  border-radius: 10px;
+  height: 16px;
+  width: 200px;
+  padding-right: 20px;
+  padding-left: 5px;
+}
+/* line 34, ../sass/app.scss */
+.search-btn i {
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  right: 7px;
+}
+
+/* line 42, ../sass/app.scss */
+.contact-list {
+  width: 600px;
+  height: 624px;
+  margin: 4px auto;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* line 50, ../sass/app.scss */
+.contact {
+  width: calc(25% - 8px);
+  height: 200px;
+  background-color: white;
+  display: inline-block;
+  float: left;
+  margin: 4px;
+  color: #ccc;
+  cursor: pointer;
+}
+/* line 61, ../sass/app.scss */
+.contact:hover img {
+  height: 112px;
+}
+/* line 65, ../sass/app.scss */
+.contact:hover .details .more {
+  display: block;
+}
+/* line 71, ../sass/app.scss */
+.contact img {
+  width: calc(100% - 12px);
+  height: 136px;
+  padding: 6px;
+  object-fit: cover;
+  object-position: top;
+}
+/* line 78, ../sass/app.scss */
+.contact .details {
+  position: relative;
+  padding: 15px 7px 7px;
+}
+/* line 81, ../sass/app.scss */
+.contact .details div {
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 12px;
+}
+/* line 87, ../sass/app.scss */
+.contact .details .name {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: middle;
+  padding-bottom: 4px;
+}
+/* line 93, ../sass/app.scss */
+.contact .details .more {
+  display: none;
+}
+/* line 98, ../sass/app.scss */
+.contact .details::after {
+  content: "";
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -32px;
+  left: 13px;
+  width: 38px;
+  height: 38px;
+}
+/* line 108, ../sass/app.scss */
+.contact.citizen .details::after {
+  background: url(/assets/citizen.svg);
+}
+/* line 111, ../sass/app.scss */
+.contact.professional .details::after {
+  background: url(/assets/professional.svg);
+}

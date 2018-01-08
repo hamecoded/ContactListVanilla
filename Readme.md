@@ -1,5 +1,7 @@
-# Prerequisites
-- install some kind of ws support, like npm: local-web-server
+# A vanila implementation of a contact list page.
+
+## Prerequisites
+- install some kind of local web server support, like npm: local-web-server
 - install compass
 
-run `ws & compass watch` 
+run `compass watch && ws` 
